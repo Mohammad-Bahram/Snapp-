@@ -6,6 +6,13 @@
   border-style: solid;
   border-color: #e5e7eb;
 }
+@font-face {
+  font-family: snapFont;
+  src: url("./IRANSans-Medium-CHnML-e5.woff");
+  src: url("./IRANSans-Medium-DIXfqJG0.woff2");
+  src: url("./IRANSans-Medium-DZ0gCkp0.ttf");
+  src: url("./IRANSans-Medium-CRe8_uXF.eot");
+}
 :before,
 :after {
   --tw-content: "";
@@ -25,6 +32,7 @@ html,
 body {
   margin: 0;
   line-height: inherit;
+  font-family: snapFont;
 }
 hr {
   height: 0;
