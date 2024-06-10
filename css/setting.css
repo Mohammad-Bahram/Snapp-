@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: snapFont !important;
+}
+@font-face {
+  font-family: snapFont;
+  src: url("../fonts/IRANSans-Medium.eot");
+  src: url("../fonts/IRANSans-Medium.ttf");
+  src: url("../fonts/IRANSans-Medium.woff");
+  src: url("../fonts/IRANSans-Medium.woff2");
+}

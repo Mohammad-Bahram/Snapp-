@@ -1,0 +1,13 @@
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&o(i)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();let a=document.querySelector(".bgMobile"),d=document.querySelector(".menuMobile"),l=document.querySelector(".mobileAcardeon");document.querySelector(".downAcardeon");let c=document.querySelector(".menuCover");console.log(c);let u=0;function f(){d.addEventListener("click",function(){u%2===0?(a.style.display="none",l.style.right="0",c.style.display="block"):(a.style.display="block",l.style.right="-200%",c.style.display="none"),l.style.transition="200ms",u++})}f();function m(){$(".Title").on("mouseenter",function(){$(".subMenu").fadeIn(300),$(".subMenu").css({display:"flex"})}),$(".Title").on("mouseleave",function(){$(".subMenu").fadeOut(300)}),$(".Title2").on("mouseenter",function(){$(".subMenu-2").fadeIn(300),$(".subMenu-2").css({display:"flex"})}),$(".Title2").on("mouseleave",function(){$(".subMenu-2").fadeOut(300)})}m();async function p(){try{let s=(await(await fetch("https://mohammad-bahram.github.io/Snapp_json/db.json")).json()).products.map(o=>`<div
+            class="p-2 flex lg:flex-row lg:justify-around lg:items-center flex-wrap md:flex-col md:justify-start md:items-center max-md:flex-col max-md:justify-center max-md:items-center bg-white rounded-[10px] lg:h-[100px]  "
+          >
+            <div class="w-[fit] h-fit">
+              <img class="max-lg:w-[40px] max-lg:h-[40px] lg:w-[58px] lg:h-[58px] object-cover" src="${o.url}" alt="test" />
+            </div>
+            <div class="w-fit h-fit flex flex-col justify-center items-center">
+              <span class="md:text-[12px] sm:text-[10px] max-sm:text-[8px] ">${o.title}</span>
+              <span class="max-md:hidden md:text-[12px] text-[#a3a3a3 ]"
+                >${o.description}</span
+              >
+            </div>
+          </div>`);document.querySelector("#root").insertAdjacentHTML("beforeend",s.join(""))}catch(r){console.log(r)}}p();new Swiper(".mySwiper",{pagination:{el:".swiper-pagination"},autoplay:{delay:3e3,disableOnInteraction:!1}});
