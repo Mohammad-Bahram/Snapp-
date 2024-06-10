@@ -8,10 +8,10 @@
 }
 @font-face {
   font-family: snapFont;
-  src: url("./IRANSans-Medium-CHnML-e5.woff");
-  src: url("./IRANSans-Medium-DIXfqJG0.woff2");
-  src: url("./IRANSans-Medium-DZ0gCkp0.ttf");
-  src: url("./IRANSans-Medium-CRe8_uXF.eot");
+  src: url("../fonts/IRANSans-Medium.eot");
+  src: url("../fonts/IRANSans-Medium.ttf");
+  src: url("../fonts/IRANSans-Medium.woff");
+  src: url("../fonts/IRANSans-Medium.woff2");
 }
 :before,
 :after {
